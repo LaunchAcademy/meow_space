@@ -1,0 +1,7 @@
+<h1>Meow</h1>
+
+<ul>
+  <% @cats.each do |cat| %>
+    <li><%= cat.name %> - <%= image_tag(cat.image_url) %></li>
+  <% end %>
+</ul>
